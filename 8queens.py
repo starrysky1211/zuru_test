@@ -25,7 +25,7 @@ def dfs(n=0):
         if is_legal(n, c):
             result[n] = c
             if n == 8:
-                print result
+                print (result)
             else:
                 dfs(n+1)
 
@@ -34,7 +34,7 @@ def _print(re, c):
     print ('#%d result\n' % c)
     for i in re:
         line = 'o  '*(i-0)+'x  '+'o  '*(7-i)
-        print line
+        print (line)
     print ('='*15)
 
 
